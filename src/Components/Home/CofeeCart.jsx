@@ -37,7 +37,7 @@ const CofeeCart = ({ coffee, coffees, setCoffee }) => {
 
   return (
     <div>
-      <div className="card card-side mb-4 bg-base-100 shadow-xl">
+      <div className="card bg-transparent card-side mb-4 bg-base-100 shadow-xl">
         <figure>
           <img
             src={photo}

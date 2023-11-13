@@ -22,7 +22,7 @@ function App() {
     <main>
       <CoverImg></CoverImg>
       <Fetures></Fetures>
-      <div className="bg-coffeeCart mt-12">
+      <div className=" mt-12">
         <p className="text-center">--- Sip & Savor ---</p>
         <h1 className="heading mb-3 text-center">Our Popular Products</h1>
         <div className="w-full text-center mt-5">
@@ -34,15 +34,17 @@ function App() {
           </Link>
         </div>
         {coffees.length > 0 ? (
-          <div className="w-[80%] my-6 mx-auto lg:columns-2">
-            {coffees.map((coffee) => (
-              <CofeeCart
-                key={coffee._id}
-                setCoffee={setCoffee}
-                coffees={coffees}
-                coffee={coffee}
-              ></CofeeCart>
-            ))}
+          <div className="bg-coffeeCart">
+            <div className="w-[80%] min-h-[60vh] my-6 mx-auto lg:columns-2">
+              {coffees.map((coffee) => (
+                <CofeeCart
+                  key={coffee._id}
+                  setCoffee={setCoffee}
+                  coffees={coffees}
+                  coffee={coffee}
+                ></CofeeCart>
+              ))}
+            </div>
           </div>
         ) : (
           <div className="w-[80%] mt-10 mx-auto">

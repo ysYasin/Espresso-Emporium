@@ -167,5 +167,9 @@ button:focus-visible {
 }
 
 .bg-coffeeCart {
-  /* background-image: url("./assets/more/"); */
+  background-image: url("./assets/more/4.png"), url("./assets/more/5.png");
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-position: top 10px left 10px,
+    top 10px right 10px;
 }

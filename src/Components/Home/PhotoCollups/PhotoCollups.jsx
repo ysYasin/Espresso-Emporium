@@ -13,7 +13,7 @@ const PhotoCollups = () => {
       <div className="text-center text-[#967259]">
         <h3 className="text-xl">Follow Us Now</h3>
         <h1 className="" style={{ fontFamily: "var(--Head--Font)" }}>
-          FOllow ON Instagram
+          Follow ON Instagram
         </h1>
       </div>
       <div className="w-[80%] my-20 mx-auto columns-2 md:columns-4 gap-y-3">
