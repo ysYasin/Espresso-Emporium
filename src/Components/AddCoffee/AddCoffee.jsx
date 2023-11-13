@@ -1,6 +1,7 @@
 import React from "react";
 import Swal from "sweetalert2";
 import HeadLin from "../Shared/headLin";
+import Footer from "../Footer/Footer";
 
 const AddCoffee = () => {
   const handleSubmutCoffee = (event) => {
@@ -139,6 +140,7 @@ const AddCoffee = () => {
           />
         </div>
       </form>
+      <Footer></Footer>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import { useLoaderData, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import HeadLin from "../Shared/headLin";
+import Footer from "../Footer/Footer";
 
 const UpdateCofee = () => {
   const coffe = useLoaderData();
@@ -168,6 +169,7 @@ const UpdateCofee = () => {
           />
         </div>
       </form>
+      <Footer></Footer>
     </div>
   );
 };
