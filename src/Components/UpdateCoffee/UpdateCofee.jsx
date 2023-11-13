@@ -3,6 +3,7 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import HeadLin from "../Shared/headLin";
 import Footer from "../Footer/Footer";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const UpdateCofee = () => {
   const coffe = useLoaderData();
@@ -64,6 +65,17 @@ const UpdateCofee = () => {
   return (
     <div className="w-full">
       <HeadLin></HeadLin>
+      <div className="w-[70%] my-9 mx-auto">
+        <button
+          style={{ color: "black", padding: "10px 5px" }}
+          className="heading items-center flex gap-2 hover:bg-[#7d5e48] hover:border-[#7d5e48] bg-transparent text-2xl"
+          onClick={() => {
+            history.back();
+          }}
+        >
+          <FaArrowLeft /> Go Back{" "}
+        </button>
+      </div>
       <form
         onSubmit={handleUpdateCoffee}
         className="lg:w-8/12 input-bordered bg-[#f6f6f6] my-12 mx-auto px-6 pt-2 pb-11 rounded-lg"
